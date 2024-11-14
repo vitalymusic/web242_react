@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+.users_grid{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.users_grid div{
+    padding: 20px;
+    border:2px solid green;
+}

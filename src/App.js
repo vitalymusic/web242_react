@@ -1,6 +1,6 @@
 import './App.css';
 import Table from './Table';
-import UsersGrid from './UsersGrid/UsersGrid'
+import UsersGrid from './UsersGrid/UsersGrid';
 
 
 export default function App() {
