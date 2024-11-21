@@ -3,6 +3,7 @@ import './App.css';
 import Dialog from './Dialog/Dialog';
 // import Table from './Table';
 import UsersGrid from './UsersGrid/UsersGrid';
+import Tabs from './Tabs/Tabs';
 
 
 
@@ -21,6 +22,9 @@ export default function App() {
       <h1>Dialog</h1>
       <button onClick={clickHandler}>Open dialog</button>
       <Dialog isOpen={dialogState} setDialogState={setDialogState}></Dialog>
+      <Tabs>
+        <h1>Test</h1>
+      </Tabs>
       
     </div>
   );
