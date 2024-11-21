@@ -1,7 +1,8 @@
 import { useState } from "react"
+import "./tabs.css"
 
 export default function Tabs(){
-    const [activeTab, setActiveTab] = useState("1");
+    const [activeTab, setActiveTab] = useState(1);
 
     return(
         <>
@@ -18,13 +19,13 @@ export default function Tabs(){
            </div>
            <div className="tabContent">
             
-            <div className={activeTab==1&&"active"} >
+            <div className={activeTab===1&&"active"} >
                 tab1
             </div>
-            <div className={activeTab==2&&"active"}>
+            <div className={activeTab===2&&"active"}>
                 tab2
             </div>
-            <div className={activeTab==3&&"active"}>
+            <div className={activeTab===3&&"active"}>
                 tab3
             </div>
 
