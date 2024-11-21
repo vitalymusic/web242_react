@@ -5,7 +5,8 @@ export default function UserCard(props) {
             <img src={props.image} alt="user1"></img>
             <p>{props.bio}</p>
             <p>Email: {props.email}</p>
-            <p>Address: {}</p>
+            <p>Address: {props.data.address}</p>
+            <p>Phone: {props.data.phone}</p>
         </div>
     )
 }
