@@ -7,12 +7,12 @@ import UsersGrid from './UsersGrid/UsersGrid';
 
 
 export default function App() {
-  const [dialogState, setDialogState] = useState(true);
+  const [dialogState, setDialogState] = useState(false);
 
   const clickHandler = ()=>{
     setDialogState(!dialogState)
   }
-
+  
   return (
     <div className="App">
       <h1>Hello React!!!</h1>
@@ -20,8 +20,8 @@ export default function App() {
       <UsersGrid />
       <h1>Dialog</h1>
       <button onClick={clickHandler}>Open dialog</button>
-      <Dialog open={dialogState}></Dialog>
-
+      <Dialog isOpen={dialogState} setDialogState={setDialogState}></Dialog>
+      
     </div>
   );
 }
