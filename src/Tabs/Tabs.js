@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export default function Tabs(){
-    const [activeTab, setActiveTab] = useState(1);
+    const [activeTab, setActiveTab] = useState("1");
 
     return(
         <>
